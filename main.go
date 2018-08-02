@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, fizubuzz(n))
 }
 
-func fizubuzz(n int) string {
+func fizzbuzz(n int) string {
 	switch {
 	case n%15 == 0:
 		return "FizzBuzz"
