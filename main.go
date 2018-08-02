@@ -15,10 +15,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("invalid"))
 		return
 	}
-	fmt.Fprint(w, fizubuzz(n))
+	fmt.Fprint(w, fizzbuzz(n))
 }
 
-func fizubuzz(n int) string {
+func fizzbuzz(n int) string {
 	switch {
 	case n%15 == 0:
 		return "FizzBuzz"
